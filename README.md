@@ -1,24 +1,14 @@
-# ICS3U Base Template for Java Programming
-This repository is a starter for ICS3U assignments. 
+# Procressing Methods Example
+This is an example Processing sketch that demonstrates the use of methods to draw multiple bubbles across the canvas: 
 
-For a guide on using GitHub with Visual Studio Code, click [here](https://github.com/SACHSTech/Using-GitHub).
+![screenshot](.media/screenshot.png)
 
-## Includes
-- ConsoleProgram setup for CodeHS-style helper input/output methods
-- Processing starter code (`Sketch.java`)
-- VS Code launch configurations for running console and graphics programs
+Each bubble has a randomly generated diameter and light colour. The bubbles are drawn in a horizontal line until the width of the canvas is filled.
 
-## Getting Started
-1. Clone this repo in VS Code.
-2. Open the `src` folder.
-3. Edit `Main.java` (or create new files that extend `ConsoleProgram`) for text-based programs.
-4. Edit `Sketch.java` to write programs with Processing graphics.
-
-## Running Your Programs
-Use the **Run and Debug panel** (on the left sidebar) to launch programs.  
-   - Select **Launch Console Program** when running text-based programs (e.g., `Main.java`, `MyProgram.java`, etc.).  
-   ![screenshot](.media/01.png)
-
-   - Select **Launch Processing Sketch** when running graphics assignments (`Sketch.java`).  
-   ![screenshot](.media/02.png)
-   - Avoid using the Play ▶ button in the editor toolbar (see top-right corner). It always repeats the previous successful launch config and may run the wrong one.
+### Design Choices
+Here are a few notes on how the code is structured:
+- Method decomposition was used to separate the bubble drawing logic into its own method (`drawBubble`). This improves code readability and reusability.
+- The `drawBubble` method returns the diameter of the bubble it draws. This allows the main loop to correctly space the bubbles without overlap.
+- Random values are used for both the diameter and colour of the bubbles to create visual variety.
+- The sketch uses a `while` loop to continue drawing bubbles until the entire width of the canvas is filled.
+- A counter variable (`currentX`) is used to track the horizontal position for drawing the next bubble.
