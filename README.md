@@ -1,4 +1,4 @@
-# Procressing Methods Example
+# Processing Methods Example
 This is an example Processing sketch that demonstrates the use of methods to draw multiple bubbles across the canvas: 
 
 ![screenshot](.media/screenshot.png)
