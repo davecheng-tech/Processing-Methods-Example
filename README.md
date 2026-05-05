@@ -3,7 +3,7 @@ This is an example Processing sketch that demonstrates the use of methods to dra
 
 ![screenshot](.media/screenshot.png)
 
-Each bubble has a randomly generated diameter and light colour. The bubbles are drawn in a horizontal line until the width of the canvas is filled.
+Each bubble has a randomly generated diameter and colour. The bubbles are drawn in a horizontal line until the width of the canvas is filled.
 
 The random generation makes this a procedurally generated sketch, meaning it will look different each time it is run.
 
