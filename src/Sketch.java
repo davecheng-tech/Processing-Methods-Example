@@ -7,12 +7,12 @@ public class Sketch extends PApplet {
 
     @Override
     public void settings() {
-        size(1000, 300);  
+        size(1000, 400);  
     }
 
     @Override
     public void setup() {
-        background(120, 197, 227);  // Cyan background
+        background(233, 215, 54);  // Yellow background
 
         float currentX = 0;  // Counter to keep track of x position
 
@@ -32,7 +32,7 @@ public class Sketch extends PApplet {
      */
     private float drawBubble(float x, float y) {
         float bubbleDiameter = random(20, 100);  // Random diameter between 20 and 100
-        fill(random(240, 255));  // Random light colour
+        fill(random(80, 180));  // Random grey colour between 80 and 180
         noStroke();
         ellipse(x + bubbleDiameter / 2, y, bubbleDiameter, bubbleDiameter);  // Draw bubble centered at (x + radius, y)
         
